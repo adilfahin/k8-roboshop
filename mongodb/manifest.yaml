@@ -1,3 +1,4 @@
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -26,7 +27,7 @@ spec:
     spec:
       containers:
       - name: mongodb
-        image: adilfahin/mongodb:v1
+        image: joindevops/mongodb:v1
         imagePullPolicy: Always
         readinessProbe:
           tcpSocket:
